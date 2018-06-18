@@ -11,7 +11,6 @@ $(function(){
 		})
 		
 		song.play();
-		song.autoplay = true;
 		song.isPlayed = true;
 		$('.discs').on("click", function () {
 			if (song.isPlayed) {

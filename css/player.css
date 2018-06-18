@@ -62,6 +62,7 @@ html,body {
 }
 .discs .lighter,.record {
 	animation: circling 20s linear infinite;
+	animation-play-state: paused;
 }
 .wrapper,.lighter {
 	width: 50vh;
