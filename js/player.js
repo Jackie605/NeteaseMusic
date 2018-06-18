@@ -65,7 +65,7 @@ $(function(){
 				let nextdataTime = plists.eq(i+1).attr('data-time')
 				if(nextdataTime&&(realTime>=dataTime&&realTime<nextdataTime)){
 					plists.css({
-						transform: "translateY(-"+30*(i-1)+"px)"
+						transform: "translateY(-"+5*(i-1)+"vh)"
 					})
 					plists.css({
 						color: "#aaa"
