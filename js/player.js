@@ -9,9 +9,7 @@ $(function(){
 		$('.bg').css({
 			"background-image":"url("+matching.img+")"
 		})
-		
-		song.play();
-		song.isPlayed = true;
+		song.isPlayed = false;
 		$('.discs').on("click", function () {
 			if (song.isPlayed) {
 				song.pause();
