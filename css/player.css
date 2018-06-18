@@ -8,11 +8,13 @@ html,body {
        overflow: hidden;
        z-index: 3;
        opacity: 0;
-    }
+	}
 .icon.active {
 	opacity: 1;
 }
 .container {
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -25,7 +27,7 @@ html,body {
 .pointer img {
 	position: absolute;
 	top: 0;
-	height: 40vw;
+	height: 23vh;
 	left: 45%;
 	z-index: 10;
 }
@@ -50,7 +52,7 @@ html,body {
 	display: flex;
 	margin: 0 auto;
 	width: 100%;
-	height:100vw;
+	height: 60vh;
 	border: 1px solid transparent;
 	justify-content: center;
 	align-items: center;
@@ -62,11 +64,11 @@ html,body {
 	animation: circling 20s linear infinite;
 }
 .wrapper,.lighter {
-	width: 80%;
+	width: 50vh;
 }
 .discs .record {
 	border-radius: 50%;
-	width: 50%;
+	width: 31vh;
 }
 @keyframes circling {
     from {
@@ -94,8 +96,6 @@ html,body {
 	text-align: center;
 	height: 90px;
 	overflow: hidden;
-	font-size: 16px;
-	line-height: 1.5;
 }
 .lyrics p {
 	font-size: 2vh;
@@ -105,15 +105,16 @@ html,body {
 }
 .buttonList {
 	position: absolute;
+	bottom: 0;
 	width: 100%;
 	display: flex;
-	bottom: 1vh;
 	font-size: 18px;
 }
 .buttonList a {
+	padding: 1vh 0;
 	width: 50%;
-	padding: 6px 0;
 	border-radius: 50px;
+	line-height: 30px;
 	text-align: center;
 	margin: 1vh 1vh;
 }
