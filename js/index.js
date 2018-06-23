@@ -41,7 +41,7 @@ $(function(){
                 </svg>
                 </a >
                 </li>`
-                    $('.sorts ul').append(li)
+                    $('.hot ul').append(li)
                 })
                 
                 
