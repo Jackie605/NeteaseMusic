@@ -64,6 +64,10 @@ html,body {
 	animation: circling 20s linear infinite;
 	animation-play-state: paused;
 }
+.discs .lighter.active,.record.active {
+	animation-play-state: running;
+}
+
 .wrapper,.lighter {
 	width: 50vh;
 }
@@ -72,6 +76,14 @@ html,body {
 	width: 31vh;
 }
 @keyframes circling {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(360deg)
+    }
+  }
+  @-webkit-keyframes circling {
     from {
       transform: rotate(0deg)
     }

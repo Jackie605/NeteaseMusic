@@ -34,6 +34,9 @@ header a {
     color: #d33a31;
     border-bottom: 2px solid #d33a31;
 }
+.sorts .hot,.search {
+    display: none;
+}
 h3 {
     font-weight: normal;
     line-height: 1;
@@ -66,23 +69,23 @@ h3 {
     top: 0;
     right: 0.3em;
 }
-.last li {
+.music li {
     position: relative;
     margin: 10px;
     border-bottom: 0.5px solid #eee;
 }
-.last a {
+.music a {
     display: block;
     color: #000;
 }
-.last .song {
+.music .song {
     display: block;
 }
-.last .author,.last .record{
+.music .author,.music .record{
     font-size: 12px;
     color: #aaa;
 }
-.last svg {
+.music svg {
     position: absolute;
     height: 1.3em;
     width: 1.3em;
@@ -122,4 +125,52 @@ footer .copyright {
     text-align: center;
     transform: scale(.75)
     
+}
+.hot .pic {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    padding-top: 5vh;
+    padding-left: 2vh;
+    background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee) no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-size: 12px;
+}
+.hot .neteaseImg {
+    width: 142px;
+    height: 67px;
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+    background-position: -24px -26px;
+    background-size: 166px 90px;
+    margin-bottom: 8px;
+}
+.hot .music {
+    margin-top: -4vh;
+} 
+
+input {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    background: #eee;
+    border-width: 0;
+    outline:0;
+    height: 30px;
+    width: 90%;
+    padding-left:20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.show a,.show p  {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 2px 0;
+    color: #000;
+    border-bottom: 0.5px solid #eee;
+
+    width: 80%;
+    margin:0 auto;
 }

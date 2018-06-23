@@ -6,6 +6,8 @@ $(function(){
 		})[0];
 		const song = new Audio(matching.src)
 		$('.record').attr('src',matching.img);
+		$('.title .name').text(matching.song)
+		$('.title .artist').text(matching.artist)
 		$('.bg').css({
 			"background-image":"url("+matching.img+")"
 		})
@@ -14,22 +16,14 @@ $(function(){
 			if (song.isPlayed) {
 				song.pause();
 				song.isPlayed = false;
-				$('.lighter').css({
-					animationPlayState: "paused"
-				})
-				$('.record').css({
-					animationPlayState: "paused"
-				})
+				$('.lighter').removeClass('active');
+				$('.record').removeClass('active');
 				$('.icon').addClass('active');
 			} else {
 				song.play();
 				song.isPlayed = true;
-				$('.lighter').css({
-					animationPlayState: "running"
-				})
-				$('.record').css({
-					animationPlayState: "running"
-				})
+				$('.lighter').addClass('active');
+				$('.record').addClass('active');
 				$('.icon').removeClass('active')
 			}
 		})
